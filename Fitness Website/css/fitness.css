@@ -1,0 +1,342 @@
+button {
+  background-color: #fee966;
+  color: black;
+}
+
+button:hover {
+  background-color: #e4d03c;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F9FAFB;
+  color: #2C3E50; 
+}
+header {
+  color: #FFFFFF;  
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ background-color: #231f20;
+}
+nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fee966;
+}
+
+.hero {
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.hero h1 {
+  font-size: 36px;
+}
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+    align-self: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay */
+  z-index: 0;
+}
+.hero h1, .hero p, .hero button {
+  position: relative;
+  z-index: 1;
+}
+
+.articles {
+    padding: 80px 20px; 
+}
+
+.articles-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.articles .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.articles .text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.articles .text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.articles .image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.articles .image img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.explore-more {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background: url('Photos/explore-bg.jpg') center/cover no-repeat;
+  flex-wrap: wrap;
+}
+
+.explore-card {
+  flex: 1;
+  min-width: 250px;
+  padding: 30px;
+  color: white;
+  position: relative;
+  border-radius: 4px;
+  max-width: 320px;
+}
+
+.explore-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.explore-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+.explore-card.yellow {
+  background-color: #fee966;
+  color: #111;
+}
+
+
+.explore-card.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+
+.card {
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: #FFFFFF; 
+  text-align: center;
+  color: #333333;
+
+}
+
+.articles .card {
+  width: 80%;
+  max-width: 600px;
+}
+
+footer {
+  background-color: #231f20;
+  color: #FFFFFF;  
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .articles-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .explore-more {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-card {
+    max-width: 90%;
+  }
+}
+
+#fitness-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#fitness-form input,
+#fitness-form select,
+#fitness-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#recommendation {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.goal-options {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.goal-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.goal-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #2C3E50;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-card .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  padding: 15px;
+  background-color: #ffffff;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card-text h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #0A3D62;
+}
+
+.card-image {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.goal-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #0A3D62;
+}
+
+.card-image.fat {
+  background-image: url('../Photos/Fatloss.jpg');
+}
+.card-image.muscle {
+  background-image: url('../Photos/skinny to muscular.webp');
+}
+.card-image.recomp {
+  background-image: url('../Photos/recomp.png');
+}
+.card-image.fit {
+  background-image: url('../Photos/bruce.webp');
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.video-section {
+  position: relative;
+  height: 400px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.video-section::before {
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.video-section > * {
+  position: relative;
+  z-index: 1;
+}
