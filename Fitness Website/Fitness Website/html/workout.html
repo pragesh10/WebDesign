@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fitness.css">
+</head>
+<body>
+<header>
+  <div class="logo">Fitness & Nutrition Hub</div>
+  <nav>
+    <a href="fitness.html">Home</a>
+    <a href="workout.html">Workout</a>
+    <a href="bmi.html">BMI</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="articles">
+  <h2>Find Your Ideal Workout Plan</h2>
+  <form id="fitness-form">
+    <label for="gender">Gender:</label>
+    <select id="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" required>
+
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" required>
+
+    <label for="goal">Fitness Goal:</label>
+<select id="goal" required>
+  <option value="">--Select--</option>
+  <option value="lose-fat">Lose Fat</option>
+  <option value="gain-muscle">Gain Muscle</option>
+  <option value="stay-fit">Stay Fit</option>
+  <option value="recomp">Lose Fat & Gain Muscle (Recomp)</option> <!-- NEW -->
+</select>
+
+    <button type="submit">Get Recommendation</button>
+  </form>
+
+  <div id="recommendation" style="margin-top: 30px;"></div>
+</section>
+<!-- 
+<section class="hero" style="background: url('Photos/workout-hero.jpg') center/cover no-repeat; height: 60vh;">
+  <h1>Workout Plans</h1>
+  <p>Find your perfect training routine</p>
+</section> -->
+
+<section class="goal-options">
+  <h2>Select Your Fitness Goal</h2>
+  <div class="goal-cards">
+    <a href="lose-fat.html" class="goal-card fat">
+      <div class="overlay">
+        <h3>Lose Fat</h3>
+      <p>Burn calories and shred excess weight with cardio & full-body training.</p>
+      </div>
+      <div class="card-image fat"></div>
+    </a>
+    <a href="gain-muscle.html" class="goal-card muscle">
+        <div class="overlay">
+      <h3>Gain Muscle</h3>
+      <p>Build strength and size with hypertrophy-focused routines.</p>
+      </div>
+      <div class="card-image muscle"></div>
+    </a>
+    <a href="recomp.html" class="goal-card recomp">
+        <div class="overlay">
+      <h3>Lose Fat & Gain Muscle</h3>
+      <p>Achieve body recomposition with smart nutrition & training balance.</p>
+      </div>
+      <div class="card-image recomp"></div>
+    </a>
+    <!-- <a href="stay-fit.html" class="goal-card fit">
+        <div class="overlay">
+      <h3>Stay Fit</h3>
+      <p>Maintain a healthy, active lifestyle with a mixed routine.</p>
+      </div>
+      <div class="card-image fit"></div>
+    </a> -->
+  </div>
+</section>
+
+
+<!-- <section class="articles">
+  <div class="articles-content">
+    <div class="text">
+      <h2>Beginner Full Body</h2>
+      <p>
+        Perfect for new lifters: bodyweight squats, push-ups, planks, light dumbbells. <br>
+        Frequency: 3x/week.
+      </p>
+    </div>
+    <div class="image">
+      <img src="Photos/beginner.jpg" alt="Beginner Workout">
+    </div>
+  </div>
+  <div class="articles-content">
+    <div class="text">
+      <h2>Strength Split</h2>
+      <p>
+        A classic push-pull-leg routine with progressive overload. Best for muscle growth. <br>
+        Frequency: 4-6x/week.
+      </p>
+    </div>
+    <div class="image">
+      <img src="Photos/strength.jpg" alt="Strength Training">
+    </div>
+  </div>
+</section> -->
+
+<footer>
+  <p>Follow us on Social Media | Contact | Disclaimer</p>
+</footer>
+    <script src="../js/fitness.js"></script>
+</body>
+</html>

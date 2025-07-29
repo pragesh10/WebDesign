@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator - Fitness & Nutrition Hub</title>
+  <link rel="stylesheet" href="../css/fitness.css" />
+  <link rel="stylesheet" href="../css/bmi.css" />
+  <style>
+    /* Sticky Footer Layout Fix */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main.content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Fitness & Nutrition Hub</div>
+  <nav>
+    <a href="fitness.html">Home</a>
+    <a href="workout.html">Workout</a>
+    <a href="bmi.html">BMI</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main class="content">
+  <section class="bmi-section">
+    <div class="bmi-container">
+      <h2>BMI CALCULATOR</h2>
+
+      <div class="tabs">
+        <button id="standardTab" class="tab active">Standard</button>
+        <button id="metricTab" class="tab">Metric</button>
+      </div>
+
+      <form id="bmiForm">
+  <!-- Standard (Imperial) -->
+  <div id="standardFields" class="form-section">
+    <label>Height</label><br>
+    <input type="number" id="feet" placeholder="Feet" required min="1" max="8" />
+    <input type="number" id="inches" placeholder="Inches" min="0" max="11" /><br /><br />
+
+    <label>Weight</label><br>
+    <input type="number" id="pounds" placeholder="Pounds" required min="20" max="1400" /><br /><br />
+  </div>
+
+  <!-- Metric -->
+  <div id="metricFields" class="form-section hidden">
+    <label>Height (cm)</label><br>
+    <input type="number" id="cm" placeholder="Centimeters" min="30" max="272" /><br /><br />
+
+    <label>Weight (kg)</label><br>
+    <input type="number" id="kg" placeholder="Kilograms" min="10" max="635" /><br /><br />
+  </div>
+
+  <button type="submit" class="calculate-btn">Calculate Your BMI</button>
+  <div id="bmiResult" class="result"></div>
+</form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Follow us on Social Media | Contact | Disclaimer</p>
+</footer>
+
+<script src="../js/bmi.js"></script>
+</body>
+</html>
